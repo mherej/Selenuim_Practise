@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary2\ClassLibrary.csproj">
-      <Project>{f9f8b3fe-0829-415d-bc8f-5bc1f109805e}</Project>
-      <Name>ClassLibrary</Name>
+    <ProjectReference Include="..\CL\CL.csproj">
+      <Project>{b2892ee9-ccca-46b7-8f70-ac21a6a8cbd9}</Project>
+      <Name>CL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

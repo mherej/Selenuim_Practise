@@ -9,7 +9,8 @@ namespace UnitTestProj
         [TestMethod]
         public void TestMethod1()
         {
-            int result = ClassLibrary2.Class1.Addition(2,3);
+            int result = CL.Class1.Addition(2,3);
+            Assert.AreEqual(5, result);
         }
     }
 }
