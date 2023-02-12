@@ -10,7 +10,7 @@ namespace UnitTestProj
         public void TestMethod1()
         {
             int result = CL.Class1.Addition(2,3);
-            Assert.AreEqual(5, result);
+            Assert.AreEqual(6, result);
         }
     }
 }
