@@ -84,7 +84,7 @@ namespace UnitTestProject
             public static void RunBeforeAllOftheTestMethods(TestContext testContext)
             {
                 _testContext = testContext;
-                Trace.WriteLine("run one time before all test methods in the class");
+                Trace.WriteLine("Run one time before all test methods in the class");
 
             }
             [TestMethod]
