@@ -65,6 +65,17 @@ namespace UnitTestProject
 
         [TestClass]
         [TestCategory("TestInitialize")]
+
+        /// Test call stack/ stack trace
+        /// ClassInitializa
+        /// TestInitialize
+        /// TestMethod
+        /// TestCleanup
+        /// TestInitialize
+        /// TestMethod
+        /// 
+        /// ClassCleanup
+        /// 
         public class Unit3
         {
             private int a;
@@ -81,7 +92,12 @@ namespace UnitTestProject
             {
                 Trace.Write("Run after every test methos will execute after every single test method");
             }
-            [ClassInitialize]
+            [ClassCleanup]
+            public static void RunAfterEveryTestClass()
+            {
+                Trace.Write("will run after all tests in the class are done");
+            }
+            [ClassInitialize] /// needs to be static and hace testContext initialized
             public static void RunBeforeAllOftheTestMethods(TestContext testContext)
             {
                 _testContext = testContext;
@@ -93,6 +109,7 @@ namespace UnitTestProject
             {
                 int b = 1;
                 Assert.AreEqual(2, a + b);
+                Trace.Write(_testContext.CurrentTestOutcome);
             }
             [TestMethod]
             public void TestMethod2()
