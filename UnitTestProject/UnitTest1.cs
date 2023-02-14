@@ -69,6 +69,7 @@ namespace UnitTestProject
         {
             private int a;
             private static TestContext _testContext;
+            public TestContext TestContext { get; set; }
 
             [TestInitialize]// will execute before EVERY test method
             public void RunBeforeEveryTest()
@@ -101,6 +102,12 @@ namespace UnitTestProject
             [TestMethod]
             [ExpectedException(typeof(AssertFailedException))]
             public void TestMethod3()
+            {
+                Assert.AreEqual(11, a);
+            }
+            [TestMethod]
+            [ExpectedException(typeof(AssertFailedException))]
+            public void TestMethod4()
             {
                 Assert.AreEqual(11, a);
             }
