@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Testing", "Unit Testin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{FE03F271-AC4E-4094-AD14-72B7E0E8DE1B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Math", "Math", "{69298436-6531-4CDD-91B4-CE6B9D33A597}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math", "Math\Math.csproj", "{7B0D97A9-75B0-40A5-A317-969231D9E728}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,10 @@ Global
 		{FE03F271-AC4E-4094-AD14-72B7E0E8DE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE03F271-AC4E-4094-AD14-72B7E0E8DE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE03F271-AC4E-4094-AD14-72B7E0E8DE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B0D97A9-75B0-40A5-A317-969231D9E728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B0D97A9-75B0-40A5-A317-969231D9E728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B0D97A9-75B0-40A5-A317-969231D9E728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B0D97A9-75B0-40A5-A317-969231D9E728}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A49B14AB-1007-4A3F-886C-5AC4CA4ECD47} = {3CE4C0C7-4085-4EAB-BCED-47B2847BC6C4}
 		{FE03F271-AC4E-4094-AD14-72B7E0E8DE1B} = {D01AFE61-901C-44FC-91F3-BDFB4C1D2546}
+		{7B0D97A9-75B0-40A5-A317-969231D9E728} = {69298436-6531-4CDD-91B4-CE6B9D33A597}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1AC3A11-F8AF-400E-852E-CB46732F209C}
