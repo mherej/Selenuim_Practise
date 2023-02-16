@@ -28,18 +28,22 @@ namespace Math
         [TestMethod]
         public void Test_Sub()
         {
+            Assert.AreEqual(5, n1 - n2);
         }
         [TestMethod]
         public void Test_Div()
         {
+            Assert.AreEqual(2, n1 / n2);
         }
         [TestMethod]
         public void Test_Multi()
         {
+            Assert.AreEqual(50, n2 * n1);
         }
         [TestMethod]
         public void Test_Modulus()
         {
+            Assert.AreEqual(0, n1 % n2);
         }
     }
 }

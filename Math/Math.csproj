@@ -49,7 +49,10 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decimal_operations.cs" />
+    <Compile Include="Floating_Operations.cs" />
     <Compile Include="IntOperations.cs" />
+    <Compile Include="MathQuiz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
