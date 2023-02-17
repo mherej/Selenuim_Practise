@@ -7,8 +7,10 @@ namespace HW
         static void Main(string[] args)
         {
             //StringInterpollation(); 
-            EscapeSequences();
-            StrigClassFormatting();        
+            //EscapeSequences();
+            //StrigClassFormatting();
+            //IsLeapYear();
+            MathOpsCheck();
         }
 
         static void StringInterpollation()
@@ -38,6 +40,27 @@ namespace HW
            // Console.WriteLine("c\my documents\user\marek");// will not work 
             Console.WriteLine("c\\my documents\\user\\marek"); // use extra \
             Console.WriteLine(@"c\my documents\user\marek");// strig literal with 
+        }
+
+        static void IsLeapYear()
+        {
+            Console.WriteLine("Enter the year to check");
+            int year = Convert.ToInt32( Console.ReadLine());
+            if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))
+            {
+                Console.WriteLine($"Given year {year} is a leap Year");
+            }
+            else
+            {
+                Console.WriteLine($"Given year {year} is not a leap Year");
+            }
+        }
+
+        static void MathOpsCheck()
+        {
+            int a = 18;
+            int b = 5;
+            Console.WriteLine(18 / 5);
         }
 
 
