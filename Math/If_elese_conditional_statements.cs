@@ -26,6 +26,10 @@ namespace Math
             {
                 Assert.IsTrue(n1 == n2);
             }
+            else 
+            {
+                Assert.Fail();
+            }
         }
         [TestMethod]
         public void n1_isnot_equal_n2()
@@ -33,6 +37,10 @@ namespace Math
             if (n1 != n2)
             {
                 Assert.IsTrue(n1 != n2);
+            }
+            else
+            {
+                Assert.Fail();
             }
         }
         [TestMethod]
@@ -42,6 +50,10 @@ namespace Math
             {
                 Assert.IsTrue(n1 > n2);
             }
+            else
+            {
+                Assert.Fail();
+            }
         }
         [TestMethod]
         public void n1_is_less_than_n2()
@@ -49,6 +61,10 @@ namespace Math
             if (n1 < n2)
             {
                 Assert.IsTrue(n1 < n2);
+            }
+            else
+            {
+                Assert.Fail();
             }
         }
     }
