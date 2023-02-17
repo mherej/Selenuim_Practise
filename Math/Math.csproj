@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Decimal_operations.cs" />
     <Compile Include="Floating_Operations.cs" />
+    <Compile Include="If_elese_conditional_statements.cs" />
     <Compile Include="IntOperations.cs" />
     <Compile Include="MathQuiz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
