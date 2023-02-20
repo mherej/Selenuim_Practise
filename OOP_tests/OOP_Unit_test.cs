@@ -1,9 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using CL;
 
 namespace OOP_tests
 {
-    [TestCategory("Car tests")]
+    [TestCategory("Class tests")]
     [TestClass]
     public class OOP_Unit_test
     {
@@ -15,7 +16,27 @@ namespace OOP_tests
             // act
             // assert
             Assert.AreEqual(car.Color, "red");
+        }
 
+        [TestMethod]
+        public void EmployeeNameCheck()
+        {
+            DateTime emp1StartDate = new DateTime(2012,01,01);
+            //arrange
+            Employee emp1 = new Employee(22, "Jonny", "Bravo", new DateTime(2012, 01, 01), "cashier", "sales", 2000.00M);
+            // act
+            // assert
+            Assert.AreEqual(emp1.FullName, "Jonny Bravo");
+        }
+
+        [TestMethod]
+        public void EmployeeNameSortCheck()
+        {
+            //arrange
+            Employee emp2 = new Employee(22, "Jonny", "Bravo", new DateTime(2012, 01, 01), "cashier", "sales", 2000.00M);
+            // act
+            // assert
+            Assert.AreEqual(emp2.SortableName, "Bravo, Jonny");
         }
     }
 }
