@@ -41,7 +41,22 @@ namespace CL
 
         public bool IsConvertible { get; set; }
 
+        public void Accelerate()
+        {
+            Console.WriteLine("Put the pedal to the floor!");
+        }
 
+        public bool IsFamilityCar()
+        {
+            if (numberOfDoors >= 4)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
     }
 }

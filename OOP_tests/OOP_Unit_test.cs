@@ -19,6 +19,37 @@ namespace OOP_tests
         }
 
         [TestMethod]
+        public void Car_Acceleration_test()
+        {
+            // arrange
+            Car car = new Car(3, "red", true);
+            // act
+            car.Accelerate();
+            // assert
+            Assert.AreEqual(car.Color, "red");
+        }
+
+
+        [TestMethod]
+        public void Car__test()
+        {
+            // arrange
+            Car car = new Car(3, "red", true);
+            // act
+            bool isCarFamily = car.IsFamilityCar();
+            // assert
+            if(isCarFamily == true)
+            {
+                Assert.AreEqual(car.IsFamilityCar(), true);
+            }
+            else
+            {
+                Assert.Fail();
+            }
+            
+        }
+
+        [TestMethod]
         public void EmployeeNameCheck()
         {
             DateTime emp1StartDate = new DateTime(2012,01,01);
@@ -38,5 +69,6 @@ namespace OOP_tests
             // assert
             Assert.AreEqual(emp2.SortableName, "Bravo, Jonny");
         }
+
     }
 }
