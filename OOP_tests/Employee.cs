@@ -9,16 +9,23 @@ namespace OOP_tests
 
     public class Employee
     {
-        public int EmployeeNumber;
-        public string FirstName;
-        public string LastName;
-        public DateTime DateOfHire;
-        public string JobDescription;
-        public string Department;
-        public decimal MonthlySalary;
+        public int EmployeeNumber { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime DateOfHire { get; set; }
+        public string JobDescription { get; set; }
+        public string Department { get; set; }
+        public decimal MonthlySalary { get; set; }
 
         public Employee()
         {
+        }
+        public Employee(int emplopeeNumber, string firstName, string lastName, string jobDescription)
+        {
+            EmployeeNumber = emplopeeNumber;
+            FirstName = firstName;
+            LastName = lastName;
+            JobDescription = jobDescription;
         }
 
         public Employee(int employeeNumber, string firstName, string lastName, DateTime dateOfHire, string jobDescription, string department, decimal monthlySalary)
@@ -41,6 +48,17 @@ namespace OOP_tests
         {
             get { return LastName + ", " + FirstName; }
         }
-
+         public string JobLocation()
+        {
+            if (JobDescription == "Manager")
+            {
+                return "Boston";
+            }
+            else if (JobDescription == "Staff")
+            {
+                return "Chicago";
+            }
+            return "New York";
+        }
     }
 }

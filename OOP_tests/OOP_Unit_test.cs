@@ -70,5 +70,15 @@ namespace OOP_tests
             Assert.AreEqual(emp2.SortableName, "Bravo, Jonny");
         }
 
+        [TestMethod]
+        public void Test_Employee_Constuctor()
+        {
+            //arrange
+            Employee emp2 = new Employee(1,"Jonhny", "Bravo","Manager");
+            // act
+            emp2.JobDescription = "Staff";
+            // assert
+            Assert.AreEqual(emp2.JobLocation(), "Chicago");
+        }
     }
 }
