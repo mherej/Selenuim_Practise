@@ -60,5 +60,10 @@ namespace OOP_tests
             }
             return "New York";
         }
+
+        public override string ToString()
+        {
+            return FullName + " " + "Job Tilte " + JobDescription;
+        }
     }
 }

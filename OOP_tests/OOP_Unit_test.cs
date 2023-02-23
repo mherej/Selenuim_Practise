@@ -80,5 +80,16 @@ namespace OOP_tests
             // assert
             Assert.AreEqual(emp2.JobLocation(), "Chicago");
         }
+
+        [TestMethod]
+        public void Test_Employee_ToSting()
+        {
+            //arrange
+            Employee emp2 = new Employee(1, "Jonhny", "Bravo", "Manager");
+            // act
+           Console.WriteLine(emp2);
+            // assert
+            //Assert.AreEqual(emp2.JobLocation(), "Chicago");
+        }
     }
 }
