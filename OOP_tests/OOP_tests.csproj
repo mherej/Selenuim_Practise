@@ -52,6 +52,7 @@
     <Compile Include="Employee.cs" />
     <Compile Include="OOP_Unit_test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trip_tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
