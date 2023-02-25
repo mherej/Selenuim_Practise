@@ -42,5 +42,15 @@ namespace OOP_tests
             Assert.AreEqual(10, retult);
         }
 
+
+        [TestMethod]
+        public void Trip_to_string_test()
+        {
+            // arrange
+            Trip trip1 = new Trip("Sligo", 25, 23.00, 3.4);
+            // act
+            Console.WriteLine(trip1.ToString());
+        }
+
     }
 }

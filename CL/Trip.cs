@@ -31,7 +31,7 @@ namespace CL
 
         public override string ToString()
         {
-            return ($" Travellinmg to {destination} distsance {distanceTravelled} total cost of fuel {totalCostOfFuel} that is {numberOfLitersConsumed} fuel liters!");
+            return ($" Travellinmg to {destination} distsance {distanceTravelled} kilometers, total cost of is {totalCostOfFuel} eoros that is {this.CostPerKilometer(this.totalCostOfFuel, this.distanceTravelled)} liters per kilometers!");
         }
     } 
 }
