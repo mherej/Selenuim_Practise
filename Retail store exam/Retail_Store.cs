@@ -4,7 +4,7 @@ using System;
 namespace Retail_store_exam
 {
     [TestClass]
-    public class UnitTest1
+    public class Retail_Store_unit_test
     {
         [TestMethod]
         public void TestMethod1()
