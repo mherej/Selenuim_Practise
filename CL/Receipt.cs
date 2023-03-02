@@ -14,10 +14,10 @@ namespace CL
         private string customerPhoneNumber;
         private int itemNumber;
         private string itemDescription;
-        private double itemPrice;
+        private decimal itemPrice;
         private int quantityPuchased;
 
-        public Receipt(int recNum, DateTime dateofpur, int custNum, string custname, string custadd, string custphnr, int itnr, string itdesc, double itpr, int qty )
+        public Receipt(int recNum, DateTime dateofpur, int custNum, string custname, string custadd, string custphnr, int itnr, string itdesc, decimal itpr, int qty )
         {
             receiptNumber = recNum;
             dateOfPurchase = dateofpur;
@@ -33,25 +33,7 @@ namespace CL
 
 
         // validations
-        public int ReceiptNumber
-        {
-            get
-            {
-                return receiptNumber;
-            }
-            set
-            {
-                if(receiptNumber < 0)
-                {
-                    Console.WriteLine("The receipt number can not be less than zero");
-                }
-                else
-                {
-                    receiptNumber = value;
-                }
-            }
-
-        }
+        public int ReceiptNumber { get { return receiptNumber;} set { if(receiptNumber < 0) { Console.WriteLine("The receipt number can not be less than zero");}  else { receiptNumber = value; } } }
 
         public int CustomerNumber
         {
@@ -111,7 +93,7 @@ namespace CL
             }
 
         }
-        public double ItemPrice
+        public decimal ItemPrice
         {
             get
             {
@@ -129,6 +111,20 @@ namespace CL
                 }
             }
 
+        }
+
+        // methods
+
+        public decimal TotalPrice()
+        {
+            var total =  itemPrice * quantityPuchased;
+            return total;
+        }
+
+        public override string ToString()
+        {
+
+            return ($"Customer: - {customerName} \n Phone: - {customerPhoneNumber} \n Total Purchase: - {this.TotalPrice()}");
         }
 
 
