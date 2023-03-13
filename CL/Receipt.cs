@@ -33,27 +33,11 @@ namespace CL
 
 
         // validations
-        public int ReceiptNumber { get { return receiptNumber;} set { if(receiptNumber < 0) { Console.WriteLine("The receipt number can not be less than zero");}  else { receiptNumber = value; } } }
+        public int ReceiptNumber
+        { get { return receiptNumber; } set { if (this.receiptNumber > 0) { receiptNumber = value; } else { Console.WriteLine("The receipt number can not be less than or zero"); } } }
 
         public int CustomerNumber
-        {
-            get
-            {
-                return customerNumber;
-            }
-            set
-            {
-                if (customerNumber < 0)
-                {
-                    Console.WriteLine("The customer number can not be less than zero");
-                }
-                else
-                {
-                    customerNumber = value;
-                }
-            }
-
-        }
+        { get { return customerNumber;} set {if (value <= 0) { Console.WriteLine("The customer number can not be less than zero");} else { customerNumber = value;}}}
 
         public int QuantityPuchased
         {
@@ -63,7 +47,7 @@ namespace CL
             }
             set
             {
-                if (quantityPuchased < 0)
+                if (value < 0)
                 {
                     Console.WriteLine("The quantity purchased can not be less than zero");
                 }
@@ -82,7 +66,7 @@ namespace CL
             }
             set
             {
-                if (itemNumber < 0 && itemNumber > 9999)
+                if (value < 0 && value > 9999)
                 {
                     Console.WriteLine("The item number can not be less than zero and more than 9999");
                 }
@@ -101,7 +85,7 @@ namespace CL
             }
             set
             {
-                if (itemPrice < 0 && itemPrice > 9999)
+                if (value < 0 && value > 9999)
                 {
                     Console.WriteLine("The item price can not be less than zero and more than 9999");
                 }
@@ -123,7 +107,6 @@ namespace CL
 
         public override string ToString()
         {
-
             return ($"Customer: - {customerName} \n Phone: - {customerPhoneNumber} \n Total Purchase: - {this.TotalPrice()}");
         }
 
