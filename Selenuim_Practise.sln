@@ -27,6 +27,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exam - retail store", "exam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Retail store exam", "Retail store exam\Retail store exam.csproj", "{AFE27E03-CF7B-4355-BBC2-BE1995DFB55C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Loops", "Loops", "{BB6D8C48-CBC1-453B-BA1C-9C78DD23DC50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops_Testing", "Loops_Testing\Loops_Testing.csproj", "{1217D1E4-8538-43D2-B2CC-4C621B985781}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,10 @@ Global
 		{AFE27E03-CF7B-4355-BBC2-BE1995DFB55C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFE27E03-CF7B-4355-BBC2-BE1995DFB55C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFE27E03-CF7B-4355-BBC2-BE1995DFB55C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1217D1E4-8538-43D2-B2CC-4C621B985781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1217D1E4-8538-43D2-B2CC-4C621B985781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1217D1E4-8538-43D2-B2CC-4C621B985781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1217D1E4-8538-43D2-B2CC-4C621B985781}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +79,7 @@ Global
 		{7B0D97A9-75B0-40A5-A317-969231D9E728} = {69298436-6531-4CDD-91B4-CE6B9D33A597}
 		{ADA05D65-713B-4546-821E-1C8D4DEB78B0} = {55BE28BA-32A3-43C5-B730-75A3DF80A7CE}
 		{AFE27E03-CF7B-4355-BBC2-BE1995DFB55C} = {9D32D91B-AF2E-4CBC-A711-ABE56CA8F79F}
+		{1217D1E4-8538-43D2-B2CC-4C621B985781} = {BB6D8C48-CBC1-453B-BA1C-9C78DD23DC50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1AC3A11-F8AF-400E-852E-CB46732F209C}

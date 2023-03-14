@@ -10,7 +10,8 @@ namespace HW
             //EscapeSequences();
             //StrigClassFormatting();
             //IsLeapYear();
-            MathOpsCheck();
+            //MathOpsCheck();
+            SentinelExample();
         }
 
         static void StringInterpollation()
@@ -61,6 +62,16 @@ namespace HW
             int a = 18;
             int b = 5;
             Console.WriteLine(18 / 5);
+        }
+
+        static void SentinelExample()
+        {
+            string enterredValue = "";
+            while (enterredValue != "99")
+            {
+                Console.WriteLine("Enter the value [99 to exit]");
+                enterredValue = Console.ReadLine();
+            }
         }
 
 
