@@ -24,9 +24,27 @@ namespace Retail_store_exam
             // arrange
             Receipt rec = new Receipt(-10, dateOfPurchaase, 1, "Jonny Bravo", "Los Angeles", "00123 234 345", 1, "Lopipop", 10.99M, 21);
             // act
-            Assert.AreEqual(-10, rec.ReceiptNumber);
+            Assert.AreEqual(0, rec.ReceiptNumber);
+        }
 
-            // check assignments of the setters in the receipt class.
+        [TestMethod]
+        [TestCategory("Negtive Input")]
+        public void Invalid_Customer_Number()
+        {
+            // arrange
+            Receipt rec = new Receipt(-10, dateOfPurchaase, -1, "Jonny Bravo", "Los Angeles", "00123 234 345", 1, "Lopipop", 10.99M, 21);
+            // act
+            Assert.AreEqual(0, rec.CustomerNumber);
+        }
+
+        [TestMethod]
+        [TestCategory("Negtive Input")]
+        public void Invalid_Quntity()
+        {
+            // arrange
+            Receipt rec = new Receipt(-10, dateOfPurchaase, 1, "Jonny Bravo", "Los Angeles", "00123 234 345", 10000, "Lopipop", 10.99M, 20000);
+            // act
+            Assert.AreEqual(0, rec.ItemNumber);
         }
     }
 }

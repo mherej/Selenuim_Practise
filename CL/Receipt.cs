@@ -19,83 +19,30 @@ namespace CL
 
         public Receipt(int recNum, DateTime dateofpur, int custNum, string custname, string custadd, string custphnr, int itnr, string itdesc, decimal itpr, int qty )
         {
-            receiptNumber = recNum;
+            ReceiptNumber = recNum;
             dateOfPurchase = dateofpur;
-            customerNumber = custNum;
+            CustomerNumber = custNum;
             customerName = custname;
             customerAdderss = custadd;
             customerPhoneNumber = custphnr;
-            itemNumber = itnr;
+            ItemNumber = itnr;
             itemDescription = itdesc;
-            itemPrice = itpr;
-            quantityPuchased = qty;
+            ItemPrice = itpr;
+            QuantityPuchased = qty;
         }
 
 
         // validations
         public int ReceiptNumber
-        { get { return receiptNumber; } set { if (this.receiptNumber > 0) { receiptNumber = value; } else { Console.WriteLine("The receipt number can not be less than or zero"); } } }
-
+        { get { return receiptNumber; } set { if (value > 0) { receiptNumber = value; } else { receiptNumber = 0; } } }
         public int CustomerNumber
-        { get { return customerNumber;} set {if (value <= 0) { Console.WriteLine("The customer number can not be less than zero");} else { customerNumber = value;}}}
-
+        { get { return customerNumber;} set {if (value > 0) { customerNumber = value; } } }
         public int QuantityPuchased
-        {
-            get
-            {
-                return quantityPuchased;
-            }
-            set
-            {
-                if (value < 0)
-                {
-                    Console.WriteLine("The quantity purchased can not be less than zero");
-                }
-                else
-                {
-                    quantityPuchased = value;
-                }
-            }
-
-        }
+        { get { return quantityPuchased; } set { if (value > 0) { quantityPuchased = value; } } }
         public int ItemNumber
-        {
-            get
-            {
-                return itemNumber;
-            }
-            set
-            {
-                if (value < 0 && value > 9999)
-                {
-                    Console.WriteLine("The item number can not be less than zero and more than 9999");
-                }
-                else
-                {
-                    itemNumber = value;
-                }
-            }
-
-        }
+        { get { return itemNumber; } set { if (value > 0 && value <= 9999) { itemNumber = value; } } }
         public decimal ItemPrice
-        {
-            get
-            {
-                return itemPrice;
-            }
-            set
-            {
-                if (value < 0 && value > 9999)
-                {
-                    Console.WriteLine("The item price can not be less than zero and more than 9999");
-                }
-                else
-                {
-                    itemPrice = value;
-                }
-            }
-
-        }
+        { get { return itemPrice; } set { if (value > 0 && value <= 9999) { itemPrice = value; } } }
 
         // methods
 
@@ -107,7 +54,7 @@ namespace CL
 
         public override string ToString()
         {
-            return ($"Customer: - {customerName} \n Phone: - {customerPhoneNumber} \n Total Purchase: - {this.TotalPrice()}");
+            return ($"Customer: - {customerName} \nPhone: - {customerPhoneNumber} \nTotal Purchase: - {this.TotalPrice().ToString()}");
         }
 
 
