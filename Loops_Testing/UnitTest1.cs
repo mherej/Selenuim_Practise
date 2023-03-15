@@ -19,14 +19,17 @@ namespace Loops_Testing
         }
 
         [TestMethod]
-        public void Sentinel_Controlled_Loop()
+        public void Do_While_Loop()
         {
-            string enterredValue = "";
-            while (enterredValue != "99")
+            int enterredValue = 0, sum = 0;
+            do
             {
-                Console.WriteLine("Enter the value [99 to exit]");
-                enterredValue = Console.ReadLine();
+                sum += enterredValue;
+                enterredValue++;
             }
+            while (enterredValue <= 10 );
+
+            Assert.AreEqual(55, sum);
         }
     }
 }
