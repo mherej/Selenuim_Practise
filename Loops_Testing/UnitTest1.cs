@@ -31,5 +31,52 @@ namespace Loops_Testing
 
             Assert.AreEqual(55, sum);
         }
+        [TestMethod]
+        public void Switch_Statement()
+        {
+            string weekDay = "";
+            int dayNumber = 3;
+
+            switch(dayNumber)
+            {
+                case 1:
+                    weekDay = "monday";
+                    break;
+                case 2:
+                    weekDay = "tuesday";
+                    break;
+
+                case 3:
+                    weekDay = "wednesday";
+                    break;
+
+                case 4:
+                    weekDay = "thursday";
+                    break;
+
+                case 5:
+                    weekDay = "friday";
+                    break;
+
+                default:
+                    weekDay = "weekend";
+                    break;
+            }
+            Assert.AreEqual("wednesday", weekDay);
+        }
+
+        [TestMethod]
+        public void Continue_break()
+        {
+            int n1 = 0;
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (i == 5)
+                    continue;
+                n1 += i;
+            }
+            Assert.AreEqual(40, n1);
+        }
     }
 }
