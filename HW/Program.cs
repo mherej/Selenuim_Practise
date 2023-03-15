@@ -11,7 +11,8 @@ namespace HW
             //StrigClassFormatting();
             //IsLeapYear();
             //MathOpsCheck();
-            SentinelExample();
+            //SentinelExample();
+            Nested_loop_practise();
         }
 
         static void StringInterpollation()
@@ -72,6 +73,25 @@ namespace HW
                 Console.WriteLine("Enter the value [99 to exit]");
                 enterredValue = Console.ReadLine();
             }
+        }
+
+        static void Nested_loop_practise()
+        {
+            var innerNumber = 10;
+            var outerNumber = 0;
+
+            while(outerNumber < 3)
+            {
+                while (innerNumber > 5)
+                {
+                    Console.WriteLine($" Outer:{outerNumber} \tInner: {innerNumber}");
+                    innerNumber--;
+                }
+                innerNumber = 10;
+                outerNumber++;
+            }
+            
+
         }
 
 
