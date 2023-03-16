@@ -46,5 +46,18 @@ namespace Retail_store_exam
             // act
             Assert.AreEqual(0, rec.ItemNumber);
         }
+
+        [TestMethod]
+
+        public void wholeSaleItemPriceRange()
+        {
+            var item = new ItemPrice(9.99M);
+
+            for(int perc = 5; perc <= 10; perc++)
+            {
+                decimal priceAndPercantage = (item.wholesaleItem * perc / 100) + item.wholesaleItem;  
+                Console.WriteLine($"Price: {item.wholesaleItem} \tincereased by {perc}% - \t{priceAndPercantage}");
+            }
+        }
     }
 }
