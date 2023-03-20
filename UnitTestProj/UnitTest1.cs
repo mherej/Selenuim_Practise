@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using CL;
 using System;
 
 namespace UnitTestProj
@@ -28,4 +29,32 @@ namespace UnitTestProj
             Console.WriteLine(newString);
         }
     }
+
+
+    [TestCategory("Overloding Methods")]
+    [TestClass]
+    public class Testing_methods_calls
+    {
+        [TestMethod]
+        public void Overlodaed_with_int()
+        {
+            Employee emp = new Employee(1234, "Jonny", "Bravo", "Manager");
+            string res = emp.PayType(1234);
+
+            Console.WriteLine(res);
+        }
+
+        [TestMethod]
+        public void Overlodaed_with_string()
+        {
+            Employee emp = new Employee(1234, "Jonny", "Bravo", "Manager");
+            string res = emp.PayType(emp.JobDescription);
+
+            Console.WriteLine(res);
+        }
+
+    }
+
+
+
 }
