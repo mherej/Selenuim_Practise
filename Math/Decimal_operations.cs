@@ -52,5 +52,6 @@ namespace Math
             Assert.AreEqual(0.5m, mod);
 
         }
+
     }
 }
