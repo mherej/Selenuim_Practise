@@ -53,6 +53,28 @@ namespace UnitTestProj
             Console.WriteLine(res);
         }
 
+        [TestMethod]
+        public void Tuple_practise()
+        { 
+            Tuple<int, string, bool> tuple = new Tuple< int, string, bool> (1, "cat", true);
+
+            if (tuple.Item1 == 1)
+            {
+                Console.WriteLine(tuple.Item1);
+            }
+
+
+            if (tuple.Item2 == "cat")
+            {
+                Console.WriteLine(tuple.Item2);
+            }
+
+            if (tuple.Item3 == true)
+            {
+                Console.WriteLine(tuple.Item3);
+            }
+        }
+
     }
 
 
