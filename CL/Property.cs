@@ -8,7 +8,8 @@ namespace CL
     {
         string Address { get; set; }
         decimal LastYearValue { get; set; }
-        decimal MillageRate { get; set; }
+        decimal MillageRate = 10.3M;
+        decimal Exemption = 25000.0M;
 
 
         public Property(string address, decimal lastvalue)
@@ -39,6 +40,10 @@ namespace CL
             return (taxableValue / 1000)*10.3M;
         }
 
-
+        public override string ToString()
+        {
+            return ($"Property Address {Address} \n Last Year Assessed Value {LastYearValue} \n Currnet Value {this.CurrentAssessedValue(this.LastYearValue)} \n  Exemption: {this.Exemption} \n " +
+                $"Taxable Value: {this.TaxableValue(this.CurrentAssessedValue(this.CurrentAssessedValue(this.LastYearValue)))}" );
+        }
     }
 }
