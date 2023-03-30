@@ -12,7 +12,8 @@ namespace HW
             //IsLeapYear();
             //MathOpsCheck();
             //SentinelExample();
-            Nested_loop_practise();
+            //Nested_loop_practise();
+            Input_Values_checker();
         }
 
         static void StringInterpollation()
@@ -91,6 +92,48 @@ namespace HW
                 outerNumber++;
             }
             
+        }
+
+        static void Input_Values_checker()
+        {
+            // collect ur input
+            // enter check if the input is ecceptable 0-10 int
+            // add input to array of accepatble and none acceptable values
+            // diplay total number of values valid and invalid 
+            // dispaly distinct number of vai d values, how many entries occurred.
+            // do not disply vaalue unless it was displayed
+
+            string sentinelControl = "";
+            int[] valiarr =  new int [10];
+            string[] invalidarr = new string [10];
+            int entryCounter = 0;
+            int inValue;
+
+            while (sentinelControl != "N")
+            {
+                Console.WriteLine("Enter the Value 0-10 only! ");
+                var input = Console.ReadLine();
+                entryCounter++;
+
+                    if (int.TryParse(input, out inValue) && inValue >= 0 && inValue <= 10)
+                    {
+                        valiarr[inValue]++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("This was not a valid entry");
+                    }
+                
+
+                Console.WriteLine("Do You want to continue [Y/N]");
+                sentinelControl = Console.ReadLine();
+            }
+
+            Console.WriteLine($"Total Entries: {entryCounter} \t Valid {valiarr.Length} \t Invalid {invalidarr.Length}");
+            Console.WriteLine(valiarr.Length);
+
+
+
         }
 
 
