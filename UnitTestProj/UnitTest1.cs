@@ -76,9 +76,4 @@ namespace UnitTestProj
         }
 
     }
-
-    []
-
-
-
 }

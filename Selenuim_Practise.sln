@@ -31,6 +31,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Loops", "Loops", "{BB6D8C48
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops_Testing", "Loops_Testing\Loops_Testing.csproj", "{1217D1E4-8538-43D2-B2CC-4C621B985781}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arrays and Lists", "Arrays and Lists", "{05103A05-B019-4AEE-8786-B133101235D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays_and_list_test", "Arrays_and_list_test\Arrays_and_list_test.csproj", "{DAF29DF7-7ED4-4337-825E-F32C531E5A93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,10 @@ Global
 		{1217D1E4-8538-43D2-B2CC-4C621B985781}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1217D1E4-8538-43D2-B2CC-4C621B985781}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1217D1E4-8538-43D2-B2CC-4C621B985781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF29DF7-7ED4-4337-825E-F32C531E5A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF29DF7-7ED4-4337-825E-F32C531E5A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF29DF7-7ED4-4337-825E-F32C531E5A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF29DF7-7ED4-4337-825E-F32C531E5A93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +88,7 @@ Global
 		{ADA05D65-713B-4546-821E-1C8D4DEB78B0} = {55BE28BA-32A3-43C5-B730-75A3DF80A7CE}
 		{AFE27E03-CF7B-4355-BBC2-BE1995DFB55C} = {9D32D91B-AF2E-4CBC-A711-ABE56CA8F79F}
 		{1217D1E4-8538-43D2-B2CC-4C621B985781} = {BB6D8C48-CBC1-453B-BA1C-9C78DD23DC50}
+		{DAF29DF7-7ED4-4337-825E-F32C531E5A93} = {05103A05-B019-4AEE-8786-B133101235D1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1AC3A11-F8AF-400E-852E-CB46732F209C}
