@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace OOP_tests
 {
-   public class Person
-    {
+   public abstract class Person
+   {
         string FirstName { get; set; }
         string LastName { get; set; }
         int Age { get; set; }
@@ -18,6 +18,9 @@ namespace OOP_tests
             LastName = lname;
             Age = age;
         }
+
+
+        public abstract string GetHabits();
     }
 
     public class Student : Person
@@ -29,6 +32,11 @@ namespace OOP_tests
         {
             studenID = sid;
             Course = cour;
+        }
+
+        public override string GetHabits()
+        {
+            return "Breathe Air!!!";
         }
     } 
 }

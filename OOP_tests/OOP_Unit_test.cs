@@ -11,8 +11,10 @@ namespace OOP_tests
         [TestMethod]
         public void Person_Student_class()
         {
-            Person person = new Person("JHonny", "Bravo", 33);
+            //Person person = new Person("JHonny", "Bravo", 33);
             Student student = new Student("Jenny", "Brown", 33, "34343", "Software development");
+
+            Console.WriteLine(student.GetHabits());
 
         }
 
